@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 // GET /api/todos/1
 router.get('/:id', (req, res) => {
-  const todo = db.get(req.params.id)
+  const todo = db.get(Number(req.params.id))
   if (!todo) {
     res.status(StatusCodes.NOT_FOUND).json({ message: `Todo with id ${id} was not found` })
     return
@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
 
 // PUT /api/todos/1
 router.put('/:id', (req, res) => {
-  const id = req.params.id
+  const id = Number(req.params.id)
   const todo = db.update({
     id,
     label: req.body.label,
@@ -50,6 +50,9 @@ router.put('/:id', (req, res) => {
 })
 
 // DELETE /api/todos/1
-router.delete('/:id', (req, res) => db.destroy(req.params.id))
+router.delete('/:id', (req, res) => {
+  db.destroy(Number(req.params.id))
+  res.status(StatusCodes.NO_CONTENT).end()
+})
 
 module.exports = router
