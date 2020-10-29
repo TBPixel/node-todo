@@ -68,6 +68,6 @@ describe('Test the todos API', () => {
 
     return request(app)
       .delete(`/api/todos/${todo.id}`)
-      .expect(StatusCodes.NO_CONTENT);
+      .expect(StatusCodes.NO_CONTENT)
   })
 })
