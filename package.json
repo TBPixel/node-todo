@@ -1,7 +1,7 @@
 {
-  "name": "node-todo",
+  "name": "whats-todo",
   "version": "1.0.0",
-  "description": "A simple full-stack JavaScript TODO app for experimentation.",
+  "description": "A todo app for everyone, literally",
   "main": "server.js",
   "scripts": {
     "start": "node server",
