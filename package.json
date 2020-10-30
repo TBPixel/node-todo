@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TBPixel/node-todo.git"
+    "url": "git+https://github.com/TBPixel/whats-todo.git"
   },
   "keywords": [],
   "author": "Tony Barry <tonympbarry@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TBPixel/node-todo/issues"
+    "url": "https://github.com/TBPixel/whats-todo/issues"
   },
-  "homepage": "https://github.com/TBPixel/node-todo#readme",
+  "homepage": "https://github.com/TBPixel/whats-todo#readme",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
