@@ -1,5 +1,11 @@
+import { TodoProvider } from './store'
+
 function Todos() {
-  return <div>Todos</div>
+  return (
+    <TodoProvider>
+      <div>todos</div>
+    </TodoProvider>
+  )
 }
 
 export default Todos
